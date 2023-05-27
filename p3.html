@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    *{
+      box-sizing: border-box;
+      align-content: center;
+    } 
+    
+    input[type="text"], select, textarea{
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #7ae7b9;
+      width: 100%;
+      resize: vertical;
+      
+      
+    }
+    input[type="date"]{
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #7ae7b9;
+      width: 100%;
+      resize: vertical;
+    
+    }
+
+    input[type="tel"]{
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #7ae7b9;
+      width: 100%;
+      resize: vertical;
+    }
+
+    input[type="email"]{
+      padding: 12px;
+      border-radius: 4px;
+      border: 2px solid #7ae7b9;
+      width: 100%;
+      resize: vertical;
+    }
+
+    input[type="password"]{
+      padding: 12px;
+      border-radius: 4px;
+      border: 2px solid #7ae7b9;
+      width: 100%;
+      resize: vertical;
+    }
+
+    label{
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    .container{
+      border-radius: 8px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 60%;
+      
+      
+    }
+    .col-25{
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    .col-75{
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    .row::after{
+      content: "";
+      display: table;
+      clear: both;
+    }
+    input[type=submit]{
+
+      background-color:green;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    input[type=reset]{
+
+      background-color:red;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+
+  </style>
+</head>
+<body >
+  
+  <div class="container">
+    <h2 align="center">STUDENT REGISTRATION FORM</h2>
+    <form class="form">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+      
+       <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+       </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="Bangladesh" selected>Bangladesh</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-25">
+          <label for="Date">Date of Birth</label>
+        </div>
+        <div class="col-75">
+          <input type="date" name="date">
+        </div>
+      </div>
+      
+      <div class="row">
+        
+        <div class="col-25">
+          <label for="Mobile Number">Mobile Number</label>
+        </div>
+        <div class="col-75">
+          <input type="tel" name="tel" placeholder="Enter Your Phone Number..">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="Email">Email </label>
+        </div>
+        <div class="col-75">
+          <input type="email" name="email" placeholder="xxxxxxxx@xxx.com">
+        </div>
+      </div>
+
+        
+      <div class="row">
+        <div class="col-25">
+          <label for="Password">Password </label>
+        </div>
+        <div class="col-75">
+          <input type="password" name="password" placeholder="Enter Your Password">
+        </div>
+      </div>
+
+        
+      <div class="row">
+        <div class="col-25">
+          <label for="Gender">Gender </label>
+        </div>
+        <div class="col-75">
+          <input type="radio" name="gender" >Male 
+          <input type="radio" name="gender">Female 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="Address">Address </label>
+        </div>
+        <div class="col-75">
+          <textarea id="ad" name="address" placeholder="Write Your Address" height="150px"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="Hobbies">Hobbies </label>
+        </div>
+        <div class="col-75">
+          <input type="checkbox" name="Hobbies">Drawing 
+          <input type="checkbox" name="Hobbies">Singing
+          <input type="checkbox" name="Hobbies">Skatching <br>Others<br>
+          <input type="text" name="Hobbies" placeholder="Write Something">
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Subject</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      
+      <br>
+      <div class="row">
+        <div class="col-23">
+          <input type="submit" value="Submit">
+          <input type="reset"  value="Reset">
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
