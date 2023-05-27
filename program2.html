@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form </title>
+  <style>
+    h3{
+      color: rgb(111, 111, 238);
+      font-size: 30px;
+    }
+  
+    table{
+      width: 60%;
+      background-color: rgb(46, 85, 85);
+      color: rgb(236, 239, 236);
+    }
+    .tb{
+      width: 100px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <form align="center ">
+    <h3 align="center"> STUDENT REGISTRATION FORM</h3>
+    <table align="center" cellpadding="10px " >
+      <tr >
+        <td align="right" width="40%">FIRST NAME :</td>
+        <td align="left" width="60%"><input type="text" id="FIRST NAME" placeholder="Enter Your Fist Name"></td>
+      </tr>
+      <tr >
+        <td align="right">LAST NAME :</td>
+        <td align="left"><input type="text" id="LAST NAME" placeholder="Enter Last Fist Name"></td>
+      </tr>
+
+      <tr>
+        <td align="right">DATE OF BIRTH :</td>
+        <td align="left"><input type="date" id="DATE OF BIRTH"></td>
+      </tr>
+
+      <tr >
+        <td align="right">MOBILE NUMBER :</td>
+        <td align="left"><input type="tel" id="MOBILE NUMBER" placeholder="Enter 11 Digit Number"></td>
+      </tr>
+
+      <tr >
+        <td align="right">EMAIL ID :</td>
+        <td align="left"><input type="email"></td>
+      </tr >
+
+      <tr>
+        <td align="right">PASSWORD :</td>
+        <td align="left"><input type="password" placeholder="PASSWORD"></td>
+      </tr>
+
+      <tr>
+        <td align="right">GENDER :</td>
+        <td align="left">MALE <input type="radio" name="gender" id="MALE" value="MALE"> FEMALE<input type="radio" name="gender" id="FEMALE" value="FEMALE"></td>
+      </tr>
+
+      <tr>
+        <td align="right">ADDRESS :</td>
+        <td align="left"><textarea  ></textarea> </td>
+      </tr>
+
+      <tr>
+        <td align="right">COUNTRY :</td>
+        <td align="left"><select >
+              <option>Bangladesh</option>
+              <option>India</option>
+              <option>Pakistan</option>
+              <option selected>USA</option>
+              <option>UAE</option>
+            </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="right">HOBBIES :</td>
+        <td align="left">Drawing<input type="checkbox">Singing<input type="checkbox">
+            Sketching<input type="checkbox"><br>Outhers<input type="checkbox">
+            <input>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="right">QALIFICATION :</td>
+        <td>
+          <table class="tb"  cellpadding="5px" width="20%">
+            <tr>
+              <th>SI.NO.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>CGPA</th>
+              <th>Passing Year</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>SSC</td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>HSC</td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Honors</td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+              <td><input type="text"></td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">
+          <input type="submit">
+          <input type="reset">
+        </td>
+
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>
